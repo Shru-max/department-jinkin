@@ -34,4 +34,9 @@ public class DepartmentServiceImpl implements DepartmentService {
     public List<Department> findByDepartmentName(String dname) {
         return departmentDao.findByDepartmentName(dname);
     }
+
+    @Override
+    public List<Department> findByEmployeeName(String ename) {
+        return departmentDao.findByEmployeeName(ename);
+    }
 }

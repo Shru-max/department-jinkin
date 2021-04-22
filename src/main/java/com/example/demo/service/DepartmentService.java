@@ -10,5 +10,6 @@ public interface DepartmentService {
     public List<Department> displayAllDepartment();
     public List<Department> findByDepartmentId(Integer id);
     public List<Department> findByDepartmentName(String dname);
+    public List<Department> findByEmployeeName(String ename);
 }
 

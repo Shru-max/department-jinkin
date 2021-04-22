@@ -13,4 +13,6 @@ public interface DepartmentDao extends MongoRepository<Department,Integer> {
     public List<Department> findByDepartmentId(Integer id);
     @Query
     public List<Department> findByDepartmentName(String dname);
+    @Query
+    public List<Department> findByEmployeeName(String ename);
 }

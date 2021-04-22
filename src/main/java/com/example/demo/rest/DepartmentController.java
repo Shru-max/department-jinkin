@@ -48,5 +48,10 @@ public class DepartmentController {
     {
         return departmentDao.findByDepartmentName(dname);
     }
+    @GetMapping("/findname/{name}")
+    public List<Department> findbyemployeename(@PathVariable String ename)
+    {
+        return departmentService.findByEmployeeName(ename);
+    }
 
 }
